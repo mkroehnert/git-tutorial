@@ -19,6 +19,7 @@ public:
     }
 private:
     std::string name;
+    std::string printString;
 };
 
 int main()
