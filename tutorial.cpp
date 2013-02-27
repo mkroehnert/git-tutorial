@@ -19,7 +19,9 @@ public:
 
 int main()
 {
-    printHelloWorld();
+    World* world = new World;
+    world->hello();
+    delete world;
     return 0;
 }
 
