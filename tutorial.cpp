@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class World
 {
@@ -10,6 +11,8 @@ public:
     {
     std::cout << "Hello World" << std::endl;
     }
+private:
+    std::string name;
 };
 
 int main()
