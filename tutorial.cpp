@@ -7,6 +7,10 @@ public:
     World()
     : name("World")
     {}
+    World(const std::string& name)
+    : name(name)
+    {}
+
     ~World(){}
 
     void hello()
