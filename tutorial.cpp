@@ -23,7 +23,7 @@ private:
 
 int main()
 {
-    World* world = new World;
+    World* world = new World("Mars");
     world->hello();
     delete world;
     return 0;
