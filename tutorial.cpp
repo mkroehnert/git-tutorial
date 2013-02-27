@@ -7,8 +7,14 @@ void printHelloWorld()
 
 class World
 {
-    World();
-    ~World();
+public:
+    World(){}
+    ~World(){}
+
+    void hello()
+    {
+    std::cout << "Hello World" << std::endl;
+    }
 };
 
 int main()
