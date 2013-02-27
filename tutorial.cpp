@@ -22,7 +22,7 @@ public:
 
     void hello()
     {
-        std::cout << "Hello " << name << std::endl;
+        std::cout << printString << " " << name << std::endl;
     }
 private:
     std::string name;
