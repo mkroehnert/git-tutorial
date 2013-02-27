@@ -15,9 +15,14 @@ public:
 
     ~World(){}
 
+    void setName(const std::string& name)
+    {
+        this->name = name;
+    }
+
     void hello()
     {
-    std::cout << "Hello " << name << std::endl;
+        std::cout << "Hello " << name << std::endl;
     }
 private:
     std::string name;
@@ -31,4 +36,3 @@ int main()
     delete world;
     return 0;
 }
-
