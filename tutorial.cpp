@@ -20,6 +20,11 @@ public:
         this->name = name;
     }
 
+    void setPrintString(const std::string& printString)
+    {
+        this->printString = printString;
+    }
+
     void hello()
     {
         std::cout << printString << " " << name << std::endl;
