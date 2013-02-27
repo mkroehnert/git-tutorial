@@ -4,7 +4,9 @@
 class World
 {
 public:
-    World(){}
+    World()
+    : name("World")
+    {}
     ~World(){}
 
     void hello()
