@@ -4,11 +4,13 @@
 class World
 {
 public:
-    World()
-    : name("World")
+    World() :
+        name("World"),
+        printString("Hello")
     {}
-    World(const std::string& name)
-    : name(name)
+    World(const std::string& name, const std::string& printString = "Hello") :
+        name(name),
+        printString(printString)
     {}
 
     ~World(){}
