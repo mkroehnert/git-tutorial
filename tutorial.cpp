@@ -40,6 +40,9 @@ int main()
     world->hello();
     world->setName("Mars");
     world->hello();
+    world->setPrintString("Aloha");
+    world->hello();
     delete world;
+
     return 1;
 }
