@@ -31,8 +31,10 @@ private:
 
 int main()
 {
-    World* world = new World("Mars");
+    World* world = new World();
+    world->hello();
+    world->setName("Mars");
     world->hello();
     delete world;
-    return 0;
+    return 1;
 }
