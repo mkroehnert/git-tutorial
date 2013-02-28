@@ -6,11 +6,11 @@ class World
 public:
     World() :
         name("World"),
-        printString("Hello")
+        greetString("Hello")
     {}
-    World(const std::string& name, const std::string& printString = "Hello") :
+    World(const std::string& name, const std::string& greetString = "Hello") :
         name(name),
-        printString(printString)
+        greetString(greetString)
     {}
 
     ~World(){}
@@ -20,18 +20,18 @@ public:
         this->name = name;
     }
 
-    void setPrintString(const std::string& printString)
+    void setPrintString(const std::string& greetString)
     {
-        this->printString = printString;
+        this->greetString = greetString;
     }
 
     void hello()
     {
-        std::cout << printString << " " << name << std::endl;
+        std::cout << greetString << " " << name << std::endl;
     }
 private:
     std::string name;
-    std::string printString;
+    std::string greetString;
 };
 
 int main()
